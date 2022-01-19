@@ -1,0 +1,78 @@
+@font-face {
+  font-family: fuenteheader;
+  src: url(../fuentes/HVD\ Fonts\ -\ BrandonText-Bold.otf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fuentes/Roboto-Light.ttf);
+}
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2px 0;
+  background: #ffffff;
+  line-height: 25.6px;
+  transition: all 300ms ease-in-out;
+}
+
+a {
+  font-family: "fuenteheader";
+  font-size: 120%;
+  color: #44414e;
+}
+
+button {
+  font-family: "fuenteheader";
+  font-size: 90%;
+}
+
+p {
+  font-family: "Roboto";
+  font-size: 20;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.atn {
+  position: relative;
+  background: #ffffff;
+  color: #44414e;
+  border: none;
+  outline: none;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.atn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.175rem;
+  left: 0;
+  bottom: 0;
+  background: #fab001;
+}
+
+.atn-center::after {
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease;
+}
+
+.atn-center:hover::after {
+  transform: scale(1, 1);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fab001 !important;
+}
